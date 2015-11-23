@@ -14,7 +14,7 @@ router.route('/users')
 	  console.log("inside get");
 
     res.json(data);
-	res.end();
+	//res.end();
   });
 })
 
@@ -31,7 +31,7 @@ employee.city = req.body.city;
       return res.send(err);
     }
  
-    res.send( 'employee Added');
+   // res.send( 'employee Added');
    res.json(data);
  });
 
@@ -70,7 +70,7 @@ emp.city = req.body.city;
     } 
 	  //res.send(  'get employee' );
     res.json(emp);
-	res.end();
+//	res.end();
   });
 }) 
 
